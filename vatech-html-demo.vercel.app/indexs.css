@@ -182,3 +182,83 @@ Add media queries for responsive design */
     }
   }
   
+
+  /* career */
+
+  .bg-video{
+    position: relative;
+    opacity: 0.7;
+  }
+
+.career_page_main{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+  .career_page{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+
+  .career_page_heading{
+    margin-right: 30%;
+     margin-top: 3%;
+  }
+  .career_page_main_heading1{
+    color: #4351f5; font-size: 3.4em;
+  }
+  .upper_div{
+    margin-top: 5%;
+  }
+  @media(max-width:768px){
+    .bg-video{
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+    }
+    .career_page_main{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .career_page_main_heading{
+      font-size:0.9em;
+      background-color: blue;
+    }
+    .career_page_main_heading1{
+      font-size:0.9em;
+    }
+    .career_page_head .h2{
+       font-size: 0.1em;
+    }
+    .career_page .h2{
+      font-size: 0.1em;
+    }
+    .career_page{
+      font-size: 0.1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .career_page_head{
+      font-size: large;
+    }
+    .career_page_head1{
+      font-size: large;
+    }
+    .career_page_head2{
+      font-size: large;
+      width: 50%;
+    }
+    .upper_div{
+      margin-top: 1%;
+    }
+  }
