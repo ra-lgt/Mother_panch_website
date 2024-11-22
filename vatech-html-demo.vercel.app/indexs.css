@@ -262,3 +262,49 @@ Add media queries for responsive design */
       margin-top: 1%;
     }
   }
+
+
+
+
+  /* loader */
+
+  /* Preloader Container */
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff; /* Background color */
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Loader */
+  #loaders {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Rotating animation */
+  }
+/* animation: spin 2s linear infinite;  */
+  /* Loader Image */
+  #loader img {
+      width: 150px; /* Size of the loader */
+     
+     /* Pulsing animation */
+  }
+
+  /* HTML: <div class="loader"></div> */
+.loaders_spin {
+  width: 40px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 0.5s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+  /*  animation: pulse 1.5s infinite;  */
