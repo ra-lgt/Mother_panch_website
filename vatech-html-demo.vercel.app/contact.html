@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Contact Us - Vatech HTML Template</title>
+    <title>PANCHDHARMA GROUP</title>
     <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg" />
+<link rel="icon" type="image/png" href="./assets/imgs/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/imgs/favicon.svg" />
+<link rel="shortcut icon" href="./assets/imgs/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/imgs/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/imgs/site.webmanifest" />
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
@@ -17,6 +21,7 @@
     <link rel="stylesheet" href="assets/fonts/boxicons/boxicons.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./contact.css"
 
 </head>
 
@@ -25,8 +30,12 @@
     <!--Preloader-->
     <div id="preloader">
         <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="assets/imgs/template/favicon.svg" alt="Preloader"></div>
+            <div>
+                <div  style="display: flex; flex-direction:column; align-items: center;">
+                    <img src="assets/imgs/pages/home1/panch_dharma_group.png" alt="Preloader">
+                    <div class="loaders_spin"></div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -117,7 +126,7 @@
                 </button>
 
                 <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 5%;">
                     <ul class="navbar-nav gap-1 align-items-lg-center me-auto mt-3 mt-lg-0">
                         <li class="nav-item">
                             <a class="fw-medium nav-link" href="index.html"
@@ -133,7 +142,7 @@
                                 aria-expanded="false"
                                 style="font-size: 1.3em; margin: 20px; color: #211B58; background-color: white;">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="fw-medium nav-link" href="#" id="projectsDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false"
                                 style="font-size: 1.3em; margin: 20px; color: #211B58; background-color: white;">Projects</a>
@@ -141,7 +150,7 @@
                                 <li><a class="dropdown-item" href="project.html">Project List</a></li>
                                 <li><a class="dropdown-item" href="project-detail.html">Project Details</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a href="#newss" class="fw-medium nav-link" id="newsDropdown" role="button"
                                 aria-expanded="false"
@@ -291,7 +300,7 @@
         <section class="box-faq-single-banner @@class">
             <div class="box-faq-single-banner-inner">
                 <div class="container">
-                    <h1 class="display-ag-2xl color-white">Contact Us</h1>
+                    <h1 class="display-ag-2xl " style="color: #CD982A;">Contact Us</h1>
                     <div class="box-breadcrumb">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item">
@@ -307,7 +316,7 @@
         </section>
 
         <!-- Contact Section 2 -->
-        <section class="box-section box-contact-section-2" style="background-color: antiquewhite;" >
+        <section class="box-section box-contact-section-2" style="background-color: white;" >
             <div class="container" data-aos="fade-up">
                 <h1 class="heading-jakarta-55 dark-950 mb-5">
                     Have Questions?<br /> Get in touch!
@@ -358,8 +367,8 @@
                                             <input type="text" class="form-control message" placeholder="Your name" />
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group mt-5">
+                                    <div class="col-md-12" style="margin-top: 10px;">
+                                        <!-- <div class="form-group mt-5">
                                             <button type="submit" class="btn btn-primary-home-square">
                                                 <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_4249_28840)">
@@ -374,7 +383,15 @@
                                                 </svg>
                                                 GET IN TOUCH
                                             </button>
-                                        </div>
+                                        </div> -->
+                                        <a href="#" class="btn btn-primary">GET IN TOUCH
+                                            <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.3333 12C11.3333 11.364 11.8525 10.4143 12.3781 9.61714C13.0539 8.58857 13.8614 7.69114 14.7872 7.00629C15.4813 6.49286 16.3228 6 17 6M17 6C16.3228 6 15.4806 5.50714 14.7872 4.99371C13.8614 4.308 13.0539 3.41057 12.3781 2.38371C11.8525 1.58571 11.3333 0.634285 11.3333 -3.66907e-07M17 6L7.39105e-07 6"
+                                                    stroke="" stroke-width="1.5" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </form>
