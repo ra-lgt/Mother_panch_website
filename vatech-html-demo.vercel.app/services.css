@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.enhanced-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+}
+
+.main-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #CD982A;
+    margin-bottom: 40px;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.company-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-logo img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.company-logo img:hover {
+    transform: scale(1.1);
+}
+
+.company-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: #00CED1;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .company-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .company-logo {
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .company-info {
+        width: 60%;
+        padding-left: 40px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .reverse .company-info {
+        padding-left: 0;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-title {
+        font-size: 3em;
+    }
+
+    .company-logo {
+        width: 30%;
+    }
+
+    .company-info {
+        width: 70%;
+    }
+}
+
